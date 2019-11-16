@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>Buna</title>
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+			<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" >
+			<link rel="stylesheet" type="text/css" href="style.css">
+			<link rel="stylesheet" type="text/css" href="responsive.css">
+			<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+			<!-- For getting promises in IE -->
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script>
+			<!-- ./For getting promises in IE -->
+			<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600|Roboto+Slab&display=swap" rel="stylesheet">
+		</head>
+		<body>
+			<!-- Navigation -->
+			<div id="mobile-nav" class="overlay">
+				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+				<div class="overlay-content">
+					<a href="#">HOME</a>
+					<a href="#">ABOUT</a>
+					<a href="#">PORTFOLIO</a>
+					<a href="#">SERVICES</a>
+					<a href="#">BLOG</a>
+					<a href="#">CONTACT</a>
+				</div>
+			</div>			
+			<div id="bn-nav-bar">
+				<div class="nav-container">
+					<span class="mobile-nav-openbar" onclick="openNav()">&#9776;</span>
+					<div class="bn-logo">
+						<img src="buna_logo.png">
+					</div>
+					<p class="buna-title font-roboto-slab">Buna</p>
+					<ul class="bn-nav-menu">
+						<li class="bn-nav-item"><a href="#" class="bn-nav-item-link active-nav-item">HOME</a></li>
+						<li class="bn-nav-item"><a href="#" class="bn-nav-item-link">ABOUT</a></li>
+						<li class="bn-nav-item"><a href="#" class="bn-nav-item-link">PORTFOLIO</a></li>
+						<li class="bn-nav-item"><a href="#" class="bn-nav-item-link">SERVICES</a></li>
+						<li class="bn-nav-item"><a href="#" class="bn-nav-item-link">BLOG</a></li>
+						<li class="bn-nav-item"><a href="#" class="bn-nav-item-link">CONTACT</a></li>
+					</ul>
+					<div class="bn-nav-extras">
+						<span class="text-center"><i class="fa fa-search"></i></span>						
+						<span class="text-center"><i class="fa fa-th"></i></span>
+					</div>
+				</div>
+			</div>
+			<!-- Navigation -->
+
+			<!-- Grid -->			
+			<div id="if-container" class="row m-0 "> 
+				<div class="column">
+					<div class="overlay-container">
+						<img class="modal-image" src="https://www.w3schools.com/w3images/wedding.jpg" style="width:100%">
+						<div class="project-overlay">
+		    				<div class="project-text">
+		    					<span class="wtp">Project 1</span>
+		    					<h4 class="project-title">Project Title</h4>
+		    					<span style="font-size: 13px;margin-right: 14px;cursor:pointer;">
+		    						<i class="fa fa-heart" style="font-size: 18px;margin-right: 6px;"></i> 135 Likes
+		    					</span>
+		    					<span class="view-larger" data-src="https://www.w3schools.com/w3images/wedding.jpg">
+		    						<i class="fa fa-arrows-v" style="font-size: 18px;transform: rotate(45deg);margin-right: 6px;"></i> View Larger
+		    					</span>
+		    				</div>
+		  				</div>
+					</div>
+					<div class="overlay-container">
+						<img class="modal-image" src="https://www.w3schools.com/w3images/rocks.jpg" style="width:100%">
+						<div class="project-overlay">
+		    				<div class="project-text">
+		    					<span class="wtp">Project 2</span>
+		    					<h4 class="project-title">Project Title</h4>
+		    					<span style="font-size: 13px;margin-right: 14px;cursor:pointer;">
+		    						<i class="fa fa-heart" style="font-size: 18px;margin-right: 6px;"></i> 135 Likes
+		    					</span>
+		    					<span class="view-larger" data-src="https://www.w3schools.com/w3images/rocks.jpg">
+		    						<i class="fa fa-arrows-v" style="font-size: 18px;transform: rotate(45deg);margin-right: 6px;"></i> View Larger
+		    					</span>
+		    				</div>
+		  				</div>
+					</div>
+					<div class="overlay-container">
+						<img class="modal-image" src="https://www.w3schools.com/w3images/falls2.jpg" style="width:100%">
+						<div class="project-overlay">
+		    				<div class="project-text">
+		    					<span class="wtp">Project 3</span>
+		    					<h4 class="project-title">Project Title</h4>
+		    					<span style="font-size: 13px;margin-right: 14px;cursor:pointer;">
+		    						<i class="fa fa-heart" style="font-size: 18px;margin-right: 6px;"></i> 135 Likes
+		    					</span>
+		    					<span class="view-larger" data-src="https://www.w3schools.com/w3images/falls2.jpg">
+		    						<i class="fa fa-arrows-v" style="font-size: 18px;transform: rotate(45deg);margin-right: 6px;"></i> View Larger
+		    					</span>
+		    				</div>
+		  				</div>
+					</div>
+					<div class="overlay-container">
+						<img class="modal-image" src="https://www.w3schools.com/w3images/paris.jpg" style="width:100%">
+						<div class="project-overlay">
+		    				<div class="project-text">
+		    					<span class="wtp">Project 4</span>
+		    					<h4 class="project-title">Project Title</h4>
+		    					<span style="font-size: 13px;margin-right: 14px;cursor:pointer;">
+		    						<i class="fa fa-heart" style="font-size: 18px;margin-right: 6px;"></i> 135 Likes
+		    					</span>
+		    					<span class="view-larger" data-src="https://www.w3schools.com/w3images/paris.jpg">
+		    						<i class="fa fa-arrows-v" style="font-size: 18px;transform: rotate(45deg);margin-right: 6px;"></i> View Larger
+		    					</span>
+		    				</div>
+		  				</div>
+					</div>
+					<div class="overlay-container">
+						<img class="modal-image" src="https://www.w3schools.com/w3images/nature.jpg" style="width:100%">
+						<div class="project-overlay">
+		    				<div class="project-text">
+		    					<span class="wtp">Project 5</span>
+		    					<h4 class="project-title">Project Title</h4>
+		    					<span style="font-size: 13px;margin-right: 14px;cursor:pointer;">
+		    						<i class="fa fa-heart" style="font-size: 18px;margin-right: 6px;"></i> 135 Likes
+		    					</span>
+		    					<span class="view-larger" data-src="https://www.w3schools.com/w3images/nature.jpg">
+		    						<i class="fa fa-arrows-v" style="font-size: 18px;transform: rotate(45deg);margin-right: 6px;"></i> View Larger
+		    					</span>
+		    				</div>
+		  				</div>
+					</div>					
+					<div class="overlay-container">
+						<img class="modal-image" src="https://www.w3schools.com/w3images/paris.jpg" style="width:100%">
+						<div class="project-overlay">
+		    				<div class="project-text">
+		    					<span class="wtp">Project 6</span>
+		    					<h4 class="project-title">Project Title</h4>
+		    					<span style="font-size: 13px;margin-right: 14px;cursor:pointer;">
+		    						<i class="fa fa-heart" style="font-size: 18px;margin-right: 6px;"></i> 135 Likes
+		    					</span>
+		    					<span class="view-larger" data-src="https://www.w3schools.com/w3images/paris.jpg">
+		    						<i class="fa fa-arrows-v" style="font-size: 18px;transform: rotate(45deg);margin-right: 6px;"></i> View Larger
+		    					</span>
+		    				</div>
+		  				</div>
+					</div>
+				</div>
+				<div class="column">
+					<div class="overlay-container">
+						<img class="modal-image" src="https://www.w3schools.com/w3images/underwater.jpg" style="width:100%">
+						<div class="project-overlay">
+		    				<div class="project-text">
+		    					<span class="wtp">Project 7</span>
+		    					<h4 class="project-title">Project Title</h4>
+		    					<span style="font-size: 13px;margin-right: 14px;cursor:pointer;">
+		    						<i class="fa fa-heart" style="font-size: 18px;margin-right: 6px;"></i> 135 Likes
+		    					</span>
+		    					<span class="view-larger" data-src="https://www.w3schools.com/w3images/underwater.jpg">
+		    						<i class="fa fa-arrows-v" style="font-size: 18px;transform: rotate(45deg);margin-right: 6px;"></i> View Larger
+		    					</span>
+		    				</div>
+		  				</div>
+					</div>
+					<div class="overlay-container">
+						<img class="modal-image" src="https://www.w3schools.com/w3images/ocean.jpg" style="width:100%">
+						<div class="project-overlay">
+		    				<div class="project-text">
+		    					<span class="wtp">Project 8</span>
+		    					<h4 class="project-title">Project Title</h4>
+		    					<span style="font-size: 13px;margin-right: 14px;cursor:pointer;">
+		    						<i class="fa fa-heart" style="font-size: 18px;margin-right: 6px;"></i> 135 Likes
+		    					</span>
+		    					<span class="view-larger" data-src="https://www.w3schools.com/w3images/ocean.jpg">
+		    						<i class="fa fa-arrows-v" style="font-size: 18px;transform: rotate(45deg);margin-right: 6px;"></i> View Larger
+		    					</span>
+		    				</div>
+		  				</div>
+					</div>
+					<div class="overlay-container">
+						<img class="modal-image" src="https://www.w3schools.com/w3images/wedding.jpg" style="width:100%">
+						<div class="project-overlay">
+		    				<div class="project-text">
+		    					<span class="wtp">Project 9</span>
+		    					<h4 class="project-title">Project Title</h4>
+		    					<span style="font-size: 13px;margin-right: 14px;cursor:pointer;">
+		    						<i class="fa fa-heart" style="font-size: 18px;margin-right: 6px;"></i> 135 Likes
+		    					</span>
+		    					<span class="view-larger" data-src="https://www.w3schools.com/w3images/wedding.jpg">
+		    						<i class="fa fa-arrows-v" style="font-size: 18px;transform: rotate(45deg);margin-right: 6px;"></i> View Larger
+		    					</span>
+		    				</div>
+		  				</div>
+					</div>
+					<div class="overlay-container">
+						<img class="modal-image" src="https://www.w3schools.com/w3images/mountainskies.jpg" style="width:100%">
+						<div class="project-overlay">
+		    				<div class="project-text">
+		    					<span class="wtp">Project 10</span>
+		    					<h4 class="project-title">Project Title</h4>
+		    					<span style="font-size: 13px;margin-right: 14px;cursor:pointer;">
+		    						<i class="fa fa-heart" style="font-size: 18px;margin-right: 6px;"></i> 135 Likes
+		    					</span>
+		    					<span class="view-larger" data-src="https://www.w3schools.com/w3images/mountainskies.jpg">
+		    						<i class="fa fa-arrows-v" style="font-size: 18px;transform: rotate(45deg);margin-right: 6px;"></i> View Larger
+		    					</span>
+		    				</div>
+		  				</div>
+					</div>
+					<div class="overlay-container">
+						<img class="modal-image" src="https://www.w3schools.com/w3images/rocks.jpg" style="width:100%">
+						<div class="project-overlay">
+		    				<div class="project-text">
+		    					<span class="wtp">Project 11</span>
+		    					<h4 class="project-title">Project Title</h4>
+		    					<span style="font-size: 13px;margin-right: 14px;cursor:pointer;">
+		    						<i class="fa fa-heart" style="font-size: 18px;margin-right: 6px;"></i> 135 Likes
+		    					</span>
+		    					<span class="view-larger" data-src="https://www.w3schools.com/w3images/rocks.jpg">
+		    						<i class="fa fa-arrows-v" style="font-size: 18px;transform: rotate(45deg);margin-right: 6px;"></i> View Larger
+		    					</span>
+		    				</div>
+		  				</div>
+					</div>
+					<div class="overlay-container">
+						<img class="modal-image" src="https://www.w3schools.com/w3images/underwater.jpg" style="width:100%">
+						<div class="project-overlay">
+		    				<div class="project-text">
+		    					<span class="wtp">Project 12</span>
+		    					<h4 class="project-title">Project Title</h4>
+		    					<span style="font-size: 13px;margin-right: 14px;cursor:pointer;">
+		    						<i class="fa fa-heart" style="font-size: 18px;margin-right: 6px;"></i> 135 Likes
+		    					</span>
+		    					<span class="view-larger" data-src="https://www.w3schools.com/w3images/underwater.jpg">
+		    						<i class="fa fa-arrows-v" style="font-size: 18px;transform: rotate(45deg);margin-right: 6px;"></i> View Larger
+		    					</span>
+		    				</div>
+		  				</div>
+					</div>
+				</div>  
+				<div class="column">
+					<div class="overlay-container">
+						<img class="modal-image" src="https://www.w3schools.com/w3images/wedding.jpg" style="width:100%">
+						<div class="project-overlay">
+		    				<div class="project-text">
+		    					<span class="wtp">Project 13</span>
+		    					<h4 class="project-title">Project Title</h4>
+		    					<span style="font-size: 13px;margin-right: 14px;cursor:pointer;">
+		    						<i class="fa fa-heart" style="font-size: 18px;margin-right: 6px;"></i> 135 Likes
+		    					</span>
+		    					<span class="view-larger" data-src="https://www.w3schools.com/w3images/wedding.jpg">
+		    						<i class="fa fa-arrows-v" style="font-size: 18px;transform: rotate(45deg);margin-right: 6px;"></i> View Larger
+		    					</span>
+		    				</div>
+		  				</div>
+					</div>
+					<div class="overlay-container">
+						<img class="modal-image" src="https://www.w3schools.com/w3images/rocks.jpg" style="width:100%">
+						<div class="project-overlay">
+		    				<div class="project-text">
+		    					<span class="wtp">Project 14</span>
+		    					<h4 class="project-title">Project Title</h4>
+		    					<span style="font-size: 13px;margin-right: 14px;cursor:pointer;">
+		    						<i class="fa fa-heart" style="font-size: 18px;margin-right: 6px;"></i> 135 Likes
+		    					</span>
+		    					<span class="view-larger" data-src="https://www.w3schools.com/w3images/rocks.jpg">
+		    						<i class="fa fa-arrows-v" style="font-size: 18px;transform: rotate(45deg);margin-right: 6px;"></i> View Larger
+		    					</span>
+		    				</div>
+		  				</div>
+					</div>
+					<div class="overlay-container">
+						<img class="modal-image" src="https://www.w3schools.com/w3images/falls2.jpg" style="width:100%">
+						<div class="project-overlay">
+		    				<div class="project-text">
+		    					<span class="wtp">Project 15</span>
+		    					<h4 class="project-title">Project Title</h4>
+		    					<span style="font-size: 13px;margin-right: 14px;cursor:pointer;">
+		    						<i class="fa fa-heart" style="font-size: 18px;margin-right: 6px;"></i> 135 Likes
+		    					</span>
+		    					<span class="view-larger" data-src="https://www.w3schools.com/w3images/falls2.jpg">
+		    						<i class="fa fa-arrows-v" style="font-size: 18px;transform: rotate(45deg);margin-right: 6px;"></i> View Larger
+		    					</span>
+		    				</div>
+		  				</div>
+					</div>
+					<div class="overlay-container">
+						<img class="modal-image" src="https://www.w3schools.com/w3images/paris.jpg" style="width:100%">
+						<div class="project-overlay">
+		    				<div class="project-text">
+		    					<span class="wtp">Project 16</span>
+		    					<h4 class="project-title">Project Title</h4>
+		    					<span style="font-size: 13px;margin-right: 14px;cursor:pointer;">
+		    						<i class="fa fa-heart" style="font-size: 18px;margin-right: 6px;"></i> 135 Likes
+		    					</span>
+		    					<span class="view-larger" data-src="https://www.w3schools.com/w3images/paris.jpg">
+		    						<i class="fa fa-arrows-v" style="font-size: 18px;transform: rotate(45deg);margin-right: 6px;"></i> View Larger
+		    					</span>
+		    				</div>
+		  				</div>
+					</div>
+					<div class="overlay-container">
+						<img class="modal-image" src="https://www.w3schools.com/w3images/nature.jpg" style="width:100%">
+						<div class="project-overlay">
+		    				<div class="project-text">
+		    					<span class="wtp">Project 17</span>
+		    					<h4 class="project-title">Project Title</h4>
+		    					<span style="font-size: 13px;margin-right: 14px;cursor:pointer;">
+		    						<i class="fa fa-heart" style="font-size: 18px;margin-right: 6px;"></i> 135 Likes
+		    					</span>
+		    					<span class="view-larger" data-src="https://www.w3schools.com/w3images/nature.jpg">
+		    						<i class="fa fa-arrows-v" style="font-size: 18px;transform: rotate(45deg);margin-right: 6px;"></i> View Larger
+		    					</span>
+		    				</div>
+		  				</div>
+					</div>
+					<div class="overlay-container">
+						<img class="modal-image" src="https://www.w3schools.com/w3images/paris.jpg" style="width:100%">
+						<div class="project-overlay">
+		    				<div class="project-text">
+		    					<span class="wtp">Project 18</span>
+		    					<h4 class="project-title">Project Title</h4>
+		    					<span style="font-size: 13px;margin-right: 14px;cursor:pointer;">
+		    						<i class="fa fa-heart" style="font-size: 18px;margin-right: 6px;"></i> 135 Likes
+		    					</span>
+		    					<span class="view-larger" data-src="https://www.w3schools.com/w3images/paris.jpg">
+		    						<i class="fa fa-arrows-v" style="font-size: 18px;transform: rotate(45deg);margin-right: 6px;"></i> View Larger
+		    					</span>
+		    				</div>
+		  				</div>
+					</div>
+				</div>
+				<div class="column">
+					<div class="overlay-container">
+						<img class="modal-image" src="https://www.w3schools.com/w3images/underwater.jpg" style="width:100%">
+						<div class="project-overlay">
+		    				<div class="project-text">
+		    					<span class="wtp">Project 19</span>
+		    					<h4 class="project-title">Project Title</h4>
+		    					<span style="font-size: 13px;margin-right: 14px;cursor:pointer;">
+		    						<i class="fa fa-heart" style="font-size: 18px;margin-right: 6px;"></i> 135 Likes
+		    					</span>
+		    					<span class="view-larger" data-src="https://www.w3schools.com/w3images/underwater.jpg">
+		    						<i class="fa fa-arrows-v" style="font-size: 18px;transform: rotate(45deg);margin-right: 6px;"></i> View Larger
+		    					</span>
+		    				</div>
+		  				</div>
+					</div>
+					<div class="overlay-container">
+						<img class="modal-image" src="https://www.w3schools.com/w3images/ocean.jpg" style="width:100%">
+						<div class="project-overlay">
+		    				<div class="project-text">
+		    					<span class="wtp">Project 20</span>
+		    					<h4 class="project-title">Project Title</h4>
+		    					<span style="font-size: 13px;margin-right: 14px;cursor:pointer;">
+		    						<i class="fa fa-heart" style="font-size: 18px;margin-right: 6px;"></i> 135 Likes
+		    					</span>
+		    					<span class="view-larger" data-src="https://www.w3schools.com/w3images/ocean.jpg">
+		    						<i class="fa fa-arrows-v" style="font-size: 18px;transform: rotate(45deg);margin-right: 6px;"></i> View Larger
+		    					</span>
+		    				</div>
+		  				</div>
+					</div>
+					<div class="overlay-container">
+						<img class="modal-image" src="https://www.w3schools.com/w3images/wedding.jpg" style="width:100%">
+						<div class="project-overlay">
+		    				<div class="project-text">
+		    					<span class="wtp">Project 21</span>
+		    					<h4 class="project-title">Project Title</h4>
+		    					<span style="font-size: 13px;margin-right: 14px;cursor:pointer;">
+		    						<i class="fa fa-heart" style="font-size: 18px;margin-right: 6px;"></i> 135 Likes
+		    					</span>
+		    					<span class="view-larger" data-src="https://www.w3schools.com/w3images/wedding.jpg">
+		    						<i class="fa fa-arrows-v" style="font-size: 18px;transform: rotate(45deg);margin-right: 6px;"></i> View Larger
+		    					</span>
+		    				</div>
+		  				</div>
+					</div>
+					<div class="overlay-container">
+						<img class="modal-image" src="https://www.w3schools.com/w3images/mountainskies.jpg" style="width:100%">
+						<div class="project-overlay">
+		    				<div class="project-text">
+		    					<span class="wtp">Project 22</span>
+		    					<h4 class="project-title">Project Title</h4>
+		    					<span style="font-size: 13px;margin-right: 14px;cursor:pointer;">
+		    						<i class="fa fa-heart" style="font-size: 18px;margin-right: 6px;"></i> 135 Likes
+		    					</span>
+		    					<span class="view-larger" data-src="https://www.w3schools.com/w3images/mountainskies.jpg">
+		    						<i class="fa fa-arrows-v" style="font-size: 18px;transform: rotate(45deg);margin-right: 6px;"></i> View Larger
+		    					</span>
+		    				</div>
+		  				</div>
+					</div>
+					<div class="overlay-container">
+						<img class="modal-image" src="https://www.w3schools.com/w3images/rocks.jpg" style="width:100%">
+						<div class="project-overlay">
+		    				<div class="project-text">
+		    					<span class="wtp">Project 23</span>
+		    					<h4 class="project-title">Project Title</h4>
+		    					<span style="font-size: 13px;margin-right: 14px;cursor:pointer;">
+		    						<i class="fa fa-heart" style="font-size: 18px;margin-right: 6px;"></i> 135 Likes
+		    					</span>
+		    					<span class="view-larger" data-src="https://www.w3schools.com/w3images/rocks.jpg">
+		    						<i class="fa fa-arrows-v" style="font-size: 18px;transform: rotate(45deg);margin-right: 6px;"></i> View Larger
+		    					</span>
+		    				</div>
+		  				</div>
+					</div>
+					<div class="overlay-container">
+						<img class="modal-image" src="https://www.w3schools.com/w3images/underwater.jpg" style="width:100%">
+						<div class="project-overlay">
+		    				<div class="project-text">
+		    					<span class="wtp">Project 24</span>
+		    					<h4 class="project-title">Project Title</h4>
+		    					<span style="font-size: 13px;margin-right: 14px;cursor:pointer;">
+		    						<i class="fa fa-heart" style="font-size: 18px;margin-right: 6px;"></i> 135 Likes
+		    					</span>
+		    					<span class="view-larger" data-src="https://www.w3schools.com/w3images/underwater.jpg">
+		    						<i class="fa fa-arrows-v" style="font-size: 18px;transform: rotate(45deg);margin-right: 6px;"></i> View Larger
+		    					</span>
+		    				</div>
+		  				</div>
+					</div>
+				</div>
+			</div>
+			<div class="status">
+			    <div class="loader-1"></div>
+			    <div class="no-more-1"><i class="fa fa-refresh"></i>  Loading more projects</div>
+			</div>
+			<!-- <div class="pager-1">			
+			    <a href="index.html" class="pager__next-1">Next &rightarrow;</a>
+			</div> -->	
+			<!-- ./Grid -->
+
+			<!-- Modal -->
+			<div id="gridModal" class="modal">
+				<span class="close">&times;</span>
+				<img class="modal-content" id="project-img">				
+			</div>
+			<!-- ./Modal -->
+
+			<!-- About Section -->
+			<div id="bn-about-section" class="mt-5">
+				<div class="wt-42 m-auto">
+					<h2 class="font-roboto-slab" style="font-weight: bold;line-height: 1.8em;">Buna, We're A Creative Agency</h2>
+					<p class="font-roboto-slab" style="line-height: 1.8em;"> 
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris
+					</p>
+				</div>
+				<div class="cta py-3">
+					<button type="button" class="custom-bn-btn mr-3">Read More</button>
+					<button type="button" class="custom-bn-btn active-btn">Our Services</button>
+				</div>
+				<div class="custom-flex m-5">
+					<div class="bn-info">
+						<div class="bn-info-icon">
+							<span><i class="fa fa-birthday-cake"></i></span>
+						</div>
+						<div class="custom-text-direction custom-ml-4">
+							<p class="m-0 bn-ap-number">2013</p>
+							<p class="m-0 bn-ap-text">Founded</p>
+						</div>
+					</div>
+					<div class="bn-info">
+						<div class="bn-info-icon">
+							<span><i class="fa fa-certificate"></i></span>
+						</div>
+						<div class="custom-text-direction custom-ml-4">
+							<p class="m-0 bn-ap-number">16</p>
+							<p class="m-0 bn-ap-text">Awards</p>
+						</div>
+					</div>
+					<div class="bn-info">
+						<div class="bn-info-icon">
+							<span><i class="fa fa-database"></i></span>
+						</div>
+						<div class="custom-text-direction custom-ml-4">
+							<p class="m-0 bn-ap-number">530</p>
+							<p class="m-0 bn-ap-text">Projects</p>
+						</div>
+					</div>
+					<div class="bn-info">
+						<div class="bn-info-icon">
+							<span><i class="fa fa-user"></i></span>
+						</div>
+						<div class="custom-text-direction custom-ml-4">
+							<p class="m-0 bn-ap-number">120</p>
+							<p class="m-0 bn-ap-text">Customers</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- ./About Section -->
+
+			<!--  News Letter -->
+			<div id="bn-subscribe-newsletter" class="text-center">
+				<h2>SUBSCRIBE TO OUR <span class="font-roboto-slab"><b>NEWSLETTER</b></span></h2>
+				<div class="subscribe-form m-auto col-md-5 pt-3">
+					<form method="post" enctype="multipart/form-data" class="form-inline justify-content-center">
+					  	<input type="email" class="custom-form-control wt-60 mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Type your e-mail...">
+					  	<button type="submit" class="custom-bn-btn custom-form-submit mb-2">Submit</button>
+					</form>
+				</div>
+			</div>
+			<!-- ./News Letter -->	
+
+			<!-- Footer Section -->
+			<footer id="bn-footer-section" class="font-roboto-slab">
+				<div class="">
+					<p class="fsize-20">285 Address & Street No. Your City, GH | <a href="tel:(888) 520-4567">(888) 520-4567 </a> | <a href="mailto:info@domain.com">info@domain.com</a></p>
+					<div class="bn-footer-icons mb-3">
+						<a href="#"><i class="fa fa-facebook"></i></a>
+						<a href="#"><i class="fa fa-twitter"></i></a>
+						<a href="#"><i class="fa fa-behance"></i></a>
+						<a href="#"><i class="fa fa-dribbble"></i></a>
+						<a href="#"><i class="fa fa-pinterest"></i></a>
+					</div>
+					<small style="color: #545454;font-size: 14px;font-weight: 500;">@2014, Buna. All Rights Reserved</small>
+				</div>
+			</footer>
+			<!-- ./Footer Section -->
+			
+			<!-- .scripts -->
+			<script src="https://unpkg.com/infinite-scroll@3/dist/infinite-scroll.pkgd.js"></script>
+			<script src="https://unpkg.com/@webcreate/infinite-ajax-scroll/dist/infinite-ajax-scroll.min.js"></script>
+			<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
+			<script type="text/javascript" src="script.js"></script>
+			<!-- ./scripts -->
+
+		</body>
+</html>
